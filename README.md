@@ -1,0 +1,32 @@
+# Extension
+Cross-browser browser extension boilerplate. Fork of the [Likeastore](https://github.com/likeastore/browser-extension) extension.
+
+## Supported Browsers
+
+* Chrome
+* Firefox
+* Safari
+
+## Development
+
+All changes have to be applied into `/js`, `/css`, `/img` folders. To build the sources into corresponding packages run,
+
+```bash
+$ gulp
+```
+
+The `/build` folder is created. It's recommened to use Chome for development, since it's very easy to create extension from folder with sources.
+
+## Distribution
+
+Once the changes are in-place and ready for distribution:
+
+1. Update all `/vendor` package file with new version (`manifest.json`, `package.json`, `Settings.plist`).
+2. Update `/vendor` browser file if necessary.
+3. Run `dist`.
+
+```bash
+$ gulp dist
+```
+
+The `/dist` folder will contain ready to dist packages (except of Safari, that require manual build).

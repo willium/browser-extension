@@ -1,0 +1,19 @@
+{
+	"id": "myextension@mydomain.com",
+	"description": "My extension description",
+	"contributors": [],
+	"author": "author@domain.com",
+	"url": "https://example.com",
+	"name": "myextension",
+	"version": "0.0.1",
+	"lib": "data",
+	"main": "data/main",
+	"data": "data",
+	"icon": "data/img/logo_48px.png",
+	"fullName": "myextension - My extension description",
+	"permissions": {
+		"cross-domain-content": [
+			"https://external.example.com"
+		]
+	}
+}

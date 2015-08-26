@@ -1,0 +1,37 @@
+{
+	"manifest_version": 2,
+	"name": "My Extension",
+	"description": "My Extension Description",
+	"version": "0.0.1",
+
+	"permissions": [
+		"tabs",
+		"https://example.com/*"
+	],
+
+	"content_scripts": [{
+		"run_at": "document_end",
+		"css": ["css/main.css"],
+		"js": [
+			"libs/jquery-2.1.4.min.js",
+			"libs/base64.js",
+			"js/browser.js",
+			"js/main.js"
+		],
+		"matches": [
+			"*://www.another-site.com/*",
+			"*://another-site.com/*",
+			"*://google.com/*"
+		]
+	}],
+
+	"icons" : {
+		"16": "img/logo_16px.png",
+		"48" : "img/logo_48px.png",
+		"128" : "img/logo_128px.png"
+	},
+
+	"web_accessible_resources": [
+		"img/*.png"
+	]
+}

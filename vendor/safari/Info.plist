@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>myextension</string>
+	<key>Builder Version</key>
+	<string>9537.76.4</string>
+	<key>CFBundleDisplayName</key>
+	<string>myextension</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.example.safariextension</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.0.1</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict/>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>js/browser.js</string>
+				<string>js/main.js</string>
+			</array>
+			<key>Start</key>
+			<array>
+				<string>libs/base64.js</string>
+				<string>libs/jquery-2.1.4.min.js</string>
+			</array>
+		</dict>
+		<key>Stylesheets</key>
+		<array>
+			<string>css/main.css</string>
+		</array>
+	</dict>
+	<key>Description</key>
+	<string>My extension description</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>*.another-site.com</string>
+				<string>*.google.com.</string>
+			</array>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>Some</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>https://example.com</string>
+</dict>
+</plist>
