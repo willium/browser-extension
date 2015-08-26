@@ -1,7 +1,7 @@
 # Extension
 Cross-browser browser extension boilerplate. Fork of the [Likeastore](https://github.com/likeastore/browser-extension) extension.
 
-License: [MIT]()
+License: [MIT](/LICENSE)
 
 ## Supported Browsers
 
